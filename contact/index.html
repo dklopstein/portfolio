@@ -8,20 +8,28 @@
 </head>
 <body>
     <nav>
-        <a href="/portfolio/">Home</a><br>
-        <a href="https://github.com/dklopstein" target="_blank">Github Profile</a><br>
-        <a href="/portfolio/projects/">Projects</a><br>
-        <a href="/portfolio/resume/">Resume</a><br>
-        <a href="/portfolio/contact/">Contact</a>
+        <ul>
+            <li><a href="/portfolio/">Home</a></li>
+            <li><a href="https://github.com/dklopstein" target="_blank">Github Profile</a></li>
+            <li><a href="/portfolio/projects/">Projects</a></li>
+            <li><a href="/portfolio/resume/">Resume</a></li>
+            <li><a class="current" href="/portfolio/contact/">Contact</a></li>
+        </ul>
     </nav>
-    <h1>Contact Derek Klopstein</h1>
+    <h1>Contact Me</h1>
     <form action="mailto:dklopstein@ucsd.edu" method="POST" enctype="text/plain">
-        <label for="email">Email:</label>
-        <input type="text" name="email" type="email">
-        <label for="subject">Subject:</label>
-        <input type="text" name="subject">
-        <label for="body">Body:</label>
-        <textarea name="body" id=""></textarea>
+        <label for="email">
+            Email:
+            <input type="text" name="email" type="email">
+        </label>
+        <label for="subject">
+            Subject:
+            <input type="text" name="subject">
+        </label>
+        <label for="body">
+            Body:
+            <textarea name="body" id=""></textarea>
+        </label>
         <button>Submit</button>
     </form>
 </body>
