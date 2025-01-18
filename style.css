@@ -1,3 +1,4 @@
+/* Overall Changes */
 body {
     /* Set line height to 1.5 times the font size
          and use the OS’s UI font as the website font
@@ -6,50 +7,49 @@ body {
     margin-inline: max(1em, (100% - 100ch) / 2);
 }
 
-/* Navigation Bar */
-ul, li {
-  display: contents;
+h1 {
+  font-size: 4rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+}
+
+/* Navigation Bar */
 nav {
+  & ul, & li {
+    display: contents;
+  }
+
   display: flex;
   margin-bottom: 0.5em;
   border-bottom: 1px solid oklch(80% 3% 200);
+
+  & a {
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    padding: 0.5em;
+  
+    &.current {
+      border-bottom: 0.4em solid oklch(80% 3% 200);
+      padding-bottom: 2px; 
+    }
+  
+    &:hover {
+      border-bottom: 0.4em solid var(--color-accent);
+      background-color: oklch(from var(--color-accent) 95% 5% h);
+      padding-bottom: 2px;
+    }
+  }
 }
 
-a {
-  flex: 1;
-  text-decoration: none;
-  color: inherit;
-  text-align: center;
-  padding: 0.5em;
-}
 
-a:hover {
-  border-bottom: 0.4em solid var(--color-accent);
-  background-color: oklch(from var(--color-accent) 95% 5% h);
-  padding-bottom: 2px;
-}
 
-.current {
-  border-bottom: 0.4em solid oklch(80% 3% 200);
-  padding-bottom: 2px; 
-}
 
-/* Contact Page */
-/* Top-Down Layout */
-/* label, button, input, textarea {
-  font: inherit;
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-}
 
-label {
-  margin-block: 1em;
-} */
-
-/* Grid Layout */
+/* Contact Page Grid Layout */
 form {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -66,6 +66,91 @@ button {
   grid-column: 1 / -1;
 }
 
+/* Projects Page */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1em;
+}
+
+article {
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+}
+
+h2 {
+  margin: 0;
+}
+
+/* Resume Page */
+section {
+  margin-bottom: 2rem;
+}
+
+section.introduction {
+  text-align: center;
+
+  & h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  & ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  & li {
+    display: inline;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid;
+  }
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    padding: 0.5em;
+  }
+}
+
+section.education {
+  & .degree {
+    margin: 0;
+    padding: 0;
+  }
+
+  & p.left {
+    margin: 0;
+  }
+
+  & p.right {
+    margin: 0;
+  }
+}
+
+section.skills-interests {
+  & ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.clear{
+    clear: both;
+    overflow: hidden;
+    height: 0px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
 
 /* Variables */
 html {

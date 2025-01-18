@@ -17,21 +17,25 @@
             <li><a href="/portfolio/contact/">Contact</a></li>
         </ul>
     </nav>
-    <hr>
 
     <!-- Introduction/Header -->
-    <header class="introduction">
+    <section class="introduction">
         <h1>Derek Klopstein</h1>
-        <p>dklopstein@ucsd.edu</p>
-        <a href="http://linkedin.com/in/derek-klopstein" target="_blank">LinkedIn</a>
-    </header>
-    <hr>
-
+        <ul class="resume-contact">
+            <li><a href="mailto:dklopstein@ucsd.edu">dklopstein@ucsd.edu</a></li>
+            <li>(661) 123-4567</li>
+            <li><a href="http://linkedin.com/in/derek-klopstein" target="_blank">LinkedIn</a></li>
+        </ul>
+    </section>
+    
     <!-- Education Section -->
     <section class="education">
         <h2>Education</h2>
-        <p>University of California San Diego - Expected 2025</p>
-        <p>B.S. in Mathematics-Computer Science & Minor in Data Science</p>
+        <hr>
+        <p class="left"><b>University of California San Diego</b></p>
+        <p class="right"><i>Expected 2025</i></p>
+        <div class="clear"></div>
+        <p class="degree"><i>B.S. in Mathematics-Computer Science & Minor in Data Science</i></p>
         <p>
             <b>Relvant Courses: </b>
             Computer Organization and Systems Programming, Algorithms, Software Engineering, Data Analysis and Inference, Data Structures, Machine Learning, Statistical Methods, Data Management
@@ -41,14 +45,15 @@
             Association for Computing Machinery, Sixth College Community Board, UCSD Club Tennis
         </p>
     </section>
-    <hr>
 
     <!-- Work Experience Section -->
     <section class="work-experience">
         <h2>Work Experience</h2>
+        <hr>
         <p>
-            <b>Google Inc. Founder/CEO</b><br>
-            <i><time datetime="1998-09">September 1998</time> - Present</i>
+            <b class="left">Google Inc. Founder/CEO</b>
+            <i class="right"><time datetime="1998-09">September 1998</time> - Present</i>
+            <div class="clear"></div>
         </p>
         <ul>
             <li>Launched the company's search engine, overseeing its evolution into the world's most widely used tool with billions of daily users.</li>
@@ -57,8 +62,9 @@
         </ul>
 
         <p>
-            <b>Amazon.com Chief Technology Officer</b><br>
-            <i><time datetime="2010-08">August 2010</time> - <time datetime="2020-06">June 2020</time></i>
+            <b class="left">Amazon.com Chief Technology Officer</b>
+            <i class="right"><time datetime="2010-08">August 2010</time> - <time datetime="2020-06">June 2020</time></i>
+            <div class="clear"></div>
         </p>
         <ul>
             <li>Directed the architecture and development of Amazon Web Services (AWS), transforming it into a $60 billion business unit and the leading cloud computing platform globally.</li>
@@ -66,8 +72,9 @@
             <li>Championed the adoption of cutting-edge technologies, including machine learning and IoT, to drive operational excellence and customer satisfaction.</li>
         </ul>
         <p>
-            <b>McDonald's Crew Member</b><br>
-            <i><time datetime="2014-06">June 2014</time> - <time datetime="2016-08">August 2016</time></i>
+            <b class="left">McDonald's Crew Member</b>
+            <i class="right"><time datetime="2014-06">June 2014</time> - <time datetime="2016-08">August 2016</time></i>
+            <div class="clear"></div>
         </p>
         <ul>
             <li>Prepared and served menu items with consistent quality and speed, maintaining a 95% customer satisfaction score during shifts.</li>
@@ -75,14 +82,15 @@
             <li>Implemented organizational improvements in food prep stations, increasing efficiency by 20% during high-demand periods.</li>
         </ul>
     </section>
-    <hr>
 
     <!-- Projects Section -->
-    <section class="projects">
+    <section class="projects-section">
         <h2>Projects</h2>
+        <hr>
         <p>
-            <b>Search Engine Prototype Development</b><br>
-            <i><time datetime="1996-01">January 1996</time> - <time datetime="1998-09">September 1998</time></i>
+            <b class="left">Search Engine Prototype Development</b>
+            <i class="right"><time datetime="1996-01">January 1996</time> - <time datetime="1998-09">September 1998</time></i>
+            <div class="clear"></div>
         </p>
         <ul>
             <li>Designed and launched the first prototype of Google Search, leveraging the revolutionary PageRank algorithm to rank web pages based on relevance.</li>
@@ -90,8 +98,9 @@
             <li>Scaled the prototype into a full-fledged platform, handling millions of searches daily within its first year.</li>
         </ul>
         <p>
-            <b>AWS Global Expansion Initiative</b><br>
-            <i><time datetime="2015-01">January 2015</time> - <time datetime="2018-12">December 2018</time></i>
+            <b class="left">AWS Global Expansion Initiative</b>
+            <i class="right"><time datetime="2015-01">January 2015</time> - <time datetime="2018-12">December 2018</time></i>
+            <div class="clear"></div>
         </p>
         <ul>
             <li>Spearheaded the launch of new AWS data centers across Asia, Europe, and South America, increasing global cloud coverage by 60%.</li>
@@ -99,8 +108,9 @@
             <li>Achieved a 25% growth in international revenue within the first year by supporting enterprise-level clients with tailored solutions.</li>
         </ul>
         <p>
-            <b>Drive-Thru Operations Workflow Optimization</b><br>
-            <i><time datetime="2015-06">June 2015</time> - <time datetime="2016-08">August 2016</time></i>
+            <b class="left">Drive-Thru Operations Workflow Optimization</b>
+            <i class="right"><time datetime="2015-06">June 2015</time> - <time datetime="2016-08">August 2016</time></i>
+            <div class="clear"></div>
         </p>
         <ul>
             <li>Analyzed bottlenecks in drive-thru service during peak hours and restructured order-taking and food preparation workflows.</li>
@@ -108,19 +118,30 @@
             <li>Documented and shared best practices with management, leading to adoption across multiple locations in the region.</li>
         </ul>
     </section>
-    <hr>
 
     <!-- Skills and Interests Section -->
      <section class="skills-interests">
-        <h2>Skills</h2>
-        <ul>
-            <li>Languages: Python, HTML, CSS, JavaScript, Java, C/C++, SQL, MATLAB</li>
+        <div id="expand-box">
+            <div id="expand-box-header">
+               <h2 class="left">Skills</h2> 
+               <h2 class="right">Interests</h2>
+                <div class="clear"></div>
+            </div>
+         </div>
+        <hr>
+        <ul class="left">
+            <li>Languages: Python, HTML, CSS, JavaScript, Java, C/C++, SQL</li>
+        </ul> 
+        <ul class="right">
+            <li>Tennis, Volleyball, Pickleball, Golf</li>
+        </ul>
+        <ul class="left">
             <li>Libraries: Numpy, Pandas, Seaborn, Matplotlib, Scikit-learn</li>
         </ul>
-        <h2>Interests</h2>
-        <ul>
-            <li>Tennis, Volleyball, Pickleball, Golf, Basketball, Personal Fitness</li>
+        <ul class="right">
+            <li>Basketball, Personal Fitness</li>
         </ul>
+        <div class="clear"></div>
      </section>
 
      <!-- Footer -->
