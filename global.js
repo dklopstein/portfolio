@@ -80,8 +80,7 @@ window.addEventListener("load", (event) => {
     }
 });
 
-// Projects Page Functions
-
+// Projects Functions
 export async function fetchJSON(url) {
     try {
         // Fetch the JSON file from the given URL
@@ -112,5 +111,9 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
         `;
         containerElement.appendChild(article);
     };
+}
+
+export async function fetchGitHubData(username) {
+    return fetchJSON(`https://api.github.com/users/${username}`);
 }
 
