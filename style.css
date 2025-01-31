@@ -21,6 +21,14 @@ html {
   color-scheme: light dark;
 }
 
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+
 /* Home Page */
 img.profile-photo {
   /* display: inline; */

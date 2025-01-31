@@ -1,61 +1,73 @@
 [
     {
-        "title": "Lorem ipsum dolor sit here.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, alias consequatur. Fuga porro perferendis, cum voluptatibus sed deserunt non. Nihil non quo minima velit facilis dolore, porro ab odit ipsum."
+        "title": "Climate in Major U.S. Cities Visualization",
+        "year": 2025,
+        "image": "../images/project1.svg",
+        "description": "Used matplotlib and seaborn to plot the number of hours of sunshine in Miami as well as the minimum and maximum amount of sunshine in other cities."
     },
     {
         "title": "Quam odio deserunt non.",
+        "year": 2024,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Iste nostrum provident, laboriosam vitae delectus at maxime? Possimus ducimus amet enim quo inventore necessitatibus, odio quaerat? Omnis minima doloribus aut earum blanditiis optio, deleniti amet vero voluptatibus exercitationem odit!"
     },
     {
         "title": "Totam eum aperiam vero.",
+        "year": 2023,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Quibusdam deleniti libero ex consequatur accusantium, aliquam dolor culpa eaque obcaecati non nemo quisquam aspernatur recusandae tempora odit officiis! Sunt debitis, fuga laboriosam aliquid nulla aspernatur? Quibusdam magnam nihil dolore."
     },
     {
         "title": "Consectetur illo fugiat facere.",
+        "year": 2022,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Placeat exercitationem eaque quibusdam asperiores sequi dignissimos! Suscipit hic veritatis pariatur, voluptatum, quisquam beatae natus, rem consequuntur perferendis saepe sequi officiis totam! Modi nihil quis fugit vero error ratione possimus."
     },
     {
         "title": "Tempora alias et quibusdam?",
+        "year": 2021,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Necessitatibus architecto ducimus cupiditate laboriosam iusto, nulla atque cum? Aperiam, commodi quas. Quia tempora quisquam animi, nulla laudantium repellat necessitatibus facilis quas, debitis totam, esse quidem? Possimus, quod. Vitae, quibusdam?"
     },
     {
         "title": "Ipsa repudiandae fugiat deleniti!",
+        "year": 2020,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Nam praesentium unde quaerat sequi esse nobis natus, doloribus tenetur? Non sit nostrum laboriosam alias eos officiis asperiores ipsam, veniam recusandae omnis dolore voluptatum inventore cumque harum possimus repellat fugit!"
     },
     {
         "title": "Consequatur repellendus quidem dolore!",
+        "year": 2019,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Vero excepturi ex corrupti, laborum totam impedit dicta id ad, ullam suscipit exercitationem mollitia velit. Eos incidunt nesciunt eaque nihil corporis. Temporibus atque in facilis ducimus maiores repellendus porro voluptatibus?"
     },
     {
         "title": "Inventore error quam placeat?",
+        "year": 2018,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Laborum, suscipit quos ipsam accusantium minus vel deserunt doloremque. Repellendus, rerum facere atque eligendi amet saepe neque temporibus deserunt ipsum hic sunt adipisci nobis! Itaque accusantium eaque ipsam in sint."
     },
     {
         "title": "Quis officiis porro inventore.",
+        "year": 2017,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Explicabo molestiae iste natus est, reprehenderit voluptate? Asperiores, unde commodi. Tempora hic nisi possimus, minus aperiam ipsa suscipit aspernatur veritatis officia. Beatae labore dolor nisi a dolorem ad esse ratione."
     },
     {
         "title": "Odit earum aliquid suscipit?",
+        "year": 2016,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Accusantium, culpa quis? Eveniet quibusdam alias cum esse in, quaerat eius molestiae maiores ut earum? Delectus voluptas totam quisquam, beatae ratione, similique officiis consequuntur sed ipsum, in omnis libero debitis."
     },
     {
         "title": "Id laudantium unde at.",
+        "year": 2015,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Earum iste quidem quaerat porro eius soluta, ea, est cumque deleniti nesciunt, velit aspernatur corporis corrupti labore neque eos minus. Ea iure ipsa ducimus fugit sequi vel, dolor quaerat. Autem."
     },
     {
         "title": "Omnis est impedit maxime!",
+        "year": 2014,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Quam odio earum iste beatae veritatis assumenda vero recusandae magni accusantium, nulla incidunt ipsa, id nam maiores provident eius reprehenderit ab, rem fugiat sapiente! Quos sunt nihil cumque reiciendis. Iure?"
     }
