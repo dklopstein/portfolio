@@ -2,7 +2,7 @@
     {
         "title": "Climate in Major U.S. Cities Visualization",
         "year": 2025,
-        "image": "/portfolio/images/project1.svg",
+        "image": "../images/project1.svg",
         "description": "Used matplotlib and seaborn to plot the number of hours of sunshine in Miami as well as the minimum and maximum amount of sunshine in other cities."
     },
     {
