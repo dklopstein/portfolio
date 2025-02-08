@@ -278,3 +278,25 @@ input.search-bar:focus {
   border-color: #007bff; /* Highlight border when focused */
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* Adds a subtle glow */
 }
+
+/* Projects Pie Chart */
+svg {
+  &:has(path:hover) {
+    path:not(:hover) {
+      opacity: 0.5;
+    }
+  }
+}
+
+path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.selected {
+  --color: oklch(50% 0.2861 277.94) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
+}
