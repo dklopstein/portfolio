@@ -80,11 +80,17 @@ function renderPieChart(projectsGiven) {
                     .attr('class', (_, idx) => (
                         idx === selectedIndex ? 'selected legend' : 'legend'
                     ))
+                let searchInput = document.querySelector('.search-bar');
+                let filteredProjects = projects.filter((project) => {
+                    let values = Object.values(project).join('\n').toLowerCase();
+                    return values.includes(query.toLowerCase());
+                });
+
                 if (selectedIndex === -1) {
-                    renderProjects(projects, projectsContainer, 'h2');
+                    renderProjects(filteredProjects, projectsContainer, 'h2');
                 } else {
                     let selectedYear = document.querySelector('li.selected').innerText.slice(0, 4);
-                    let filteredProjects = projects.filter((project) => project.year == parseInt(selectedYear));
+                    filteredProjects = filteredProjects.filter((project) => project.year == parseInt(selectedYear));
                     renderProjects(filteredProjects, projectsContainer, 'h2');
                 }
             });
@@ -112,35 +118,3 @@ searchInput.addEventListener('input', (event) => {
     renderProjects(filteredProjects, projectsContainer, 'h2');
     renderPieChart(filteredProjects);
 });
-
-// let sliceGenerator = d3.pie().value((d) => d.value);
-// let newArcData = newSliceGenerator(newData);
-// let newArcs = newArcData.map((d) => arcGenerator(d));
-
-// let rolledData = d3.rollups(
-//     projectsGiven,
-//     (v) => v.length,
-//     (d) => d.year,
-// );
-
-// let data = rolledData.map(([year, count]) => {
-//     return { value: count, label: year };
-// });
-
-// let sliceGenerator = d3.pie().value((d) => d.value);
-// let arcData = sliceGenerator(data);
-// let arcs = arcData.map((d) => arcGenerator(d));
-// let colors = d3.scaleOrdinal(d3.schemeTableau10);
-
-// let selectedIndex = -1;
-// let svg = d3.select('svg');
-// svg.selectAll('path').remove();
-// arcs.forEach((arc, i) => {
-//     svg
-//         .append('path')
-//         .attr('d', arc)
-//         .attr('fill', colors(i))
-//         .on('click', () => {
-//             console.log('hello');
-//     });
-// });
