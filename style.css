@@ -1,17 +1,22 @@
 /* Overall Changes */
 body {
-    /* Set line height to 1.5 times the font size
+  /* Set line height to 1.5 times the font size
          and use the OS’s UI font as the website font
        */
-    font: 100%/1.5 system-ui;
-    margin-inline: max(1em, (100% - 100ch) / 2);
+  font: 100%/1.5 system-ui;
+  margin-inline: max(1em, (100% - 100ch) / 2);
 }
 
 h1 {
   font-size: 4rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.1;
 }
 
@@ -22,7 +27,7 @@ html {
 }
 
 .zoom {
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .zoom:hover {
@@ -38,7 +43,8 @@ img.profile-photo {
   border-radius: 50%;
 }
 
-#stats-header, #project-header {
+#stats-header,
+#project-header {
   margin-top: 2rem;
 }
 
@@ -67,7 +73,8 @@ dl {
 /* Navigation Bar */
 nav {
   --border-color: oklch(50% 10% 200 / 40%);
-  & ul, & li {
+  & ul,
+  & li {
     display: contents;
   }
 
@@ -81,21 +88,24 @@ nav {
     color: inherit;
     text-align: center;
     padding: 0.5em;
-  
+
     &.current {
       border-bottom: 0.4em solid;
-      border-bottom-color: var(--border-color); 
-      padding-bottom: 2px; 
+      border-bottom-color: var(--border-color);
+      padding-bottom: 2px;
     }
-  
+
     &:hover {
       border-bottom: 0.4em solid var(--color-accent);
-      background-color: color-mix(in oklch, oklch(from var(--color-accent) l c h / calc(alpha - 0.4)), canvas 90%);
+      background-color: color-mix(
+        in oklch,
+        oklch(from var(--color-accent) l c h / calc(alpha - 0.4)),
+        canvas 90%
+      );
       padding-bottom: 2px;
     }
   }
 }
-
 
 /* Contact Page Grid Layout */
 form {
@@ -104,7 +114,9 @@ form {
   gap: 1em;
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
   font-family: inherit;
 }
 
@@ -133,7 +145,6 @@ article {
 h2 {
   margin: 0;
 }
-
 
 /* Resume Page */
 section {
@@ -191,10 +202,10 @@ section.skills-interests {
   }
 }
 
-.clear{
-    clear: both;
-    overflow: hidden;
-    height: 0px;
+.clear {
+  clear: both;
+  overflow: hidden;
+  height: 0px;
 }
 
 .left {
@@ -204,7 +215,6 @@ section.skills-interests {
 .right {
   float: right;
 }
-
 
 /* Color Scheme Selector */
 label.color-scheme {
@@ -235,7 +245,7 @@ span.swatch {
   aspect-ratio: 1 / 1;
   background-color: var(--color);
   border-radius: 50%;
-  margin: .25rem;
+  margin: 0.25rem;
 }
 
 ul.legend {
@@ -249,9 +259,9 @@ ul.legend {
 }
 
 li.legend {
-    display: flex;
-    align-items: center;
-    gap: 2.5%;
+  display: flex;
+  align-items: center;
+  gap: 2.5%;
 }
 
 div.legend-container {
@@ -262,15 +272,15 @@ div.legend-container {
 
 /* Projects Search Bar */
 input.search-bar {
-  width: 100%; 
+  width: 100%;
   max-width: 100vw;
-  height: 3rem; 
+  height: 3rem;
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
   margin: 1rem;
   border: 2px solid #ccc;
-  border-radius: 8px; 
-  outline: none; 
+  border-radius: 8px;
+  outline: none;
   transition: border-color 0.3s ease-in-out;
 }
 
@@ -306,28 +316,6 @@ g.gridlines {
   opacity: 10%;
 }
 
-/* dl.info {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0.5em 1em;
-  transition-duration: 500ms;
-  transition-property: opacity, visibility;
-}
-
-dl.info[hidden]:not(:hover, :focus-within) {
-  opacity: 0;
-  visibility: hidden;
-}
-
-dl.info dt {
-  font-weight: normal;
-  margin: 0;
-}
-
-dl.info dd {
-  font-weight: bold;
-  margin: 0;
-} */
 dl.info {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -357,15 +345,14 @@ dl.info dd {
   position: fixed;
   top: 1em;
   left: 1em;
-  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle elevation */
-  border-radius: 6px; /* Rounded corners */
-  backdrop-filter: blur(8px); /* Frosted glass effect */
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  backdrop-filter: blur(8px);
   padding: 0.75em 1em;
   font-size: 0.875rem;
   color: #333;
-  /* max-width: 250px; */
-  pointer-events: none; /* Ensures it doesn't interfere with interactions */
+  pointer-events: none;
   transition: opacity 0.2s ease-in-out;
 }
 

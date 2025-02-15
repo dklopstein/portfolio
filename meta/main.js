@@ -219,28 +219,28 @@ function updateTooltipVisibility(isVisible) {
 }
 
 function updateTooltipPosition(event) {
-//   const tooltip = document.getElementById("commit-tooltip");
-//   tooltip.style.left = `${event.clientX}px`;
-//   tooltip.style.top = `${event.clientY}px`;
-    const tooltip = document.getElementById("commit-tooltip");
-    const svgRect = document.querySelector("svg").getBoundingClientRect();
-    const mouseX = event.clientX;
-    const mouseY = event.clientY;
+  //   const tooltip = document.getElementById("commit-tooltip");
+  //   tooltip.style.left = `${event.clientX}px`;
+  //   tooltip.style.top = `${event.clientY}px`;
+  const tooltip = document.getElementById("commit-tooltip");
+  const svgRect = document.querySelector("svg").getBoundingClientRect();
+  const mouseX = event.clientX;
+  const mouseY = event.clientY;
 
-    // Check if the circle is in the right half of the graph
-    const isRightHalf = mouseX > svgRect.left + svgRect.width / 2;
+  // Check if the circle is in the right half of the graph
+  const isRightHalf = mouseX > svgRect.left + svgRect.width / 2;
 
-    // Adjust tooltip position based on the circle's location
-    if (isRightHalf) {
-        // Position tooltip to the left of the circle
-        tooltip.style.left = `${mouseX - tooltip.offsetWidth}px`;
-    } else {
-        // Default: position tooltip to the right of the circle
-        tooltip.style.left = `${mouseX}px`;
-    }
+  // Adjust tooltip position based on the circle's location
+  if (isRightHalf) {
+    // Position tooltip to the left of the circle
+    tooltip.style.left = `${mouseX - tooltip.offsetWidth}px`;
+  } else {
+    // Default: position tooltip to the right of the circle
+    tooltip.style.left = `${mouseX}px`;
+  }
 
-    // Position tooltip vertically (above or below the circle)
-    tooltip.style.top = `${mouseY}px`; 
+  // Position tooltip vertically (above or below the circle)
+  tooltip.style.top = `${mouseY}px`;
 }
 
 function brushSelector() {
