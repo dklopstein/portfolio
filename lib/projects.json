@@ -6,10 +6,11 @@
     "description": "Used matplotlib and seaborn to plot the number of hours of sunshine in Miami as well as the minimum and maximum amount of sunshine in other cities."
   },
   {
-    "title": "Quam odio deserunt non.",
+    "title": "Bikewatching Interactive Visualization",
     "year": 2025,
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Iste nostrum provident, laboriosam vitae delectus at maxime? Possimus ducimus amet enim quo inventore necessitatibus, odio quaerat? Omnis minima doloribus aut earum blanditiis optio, deleniti amet vero voluptatibus exercitationem odit!"
+    "image": "/portfolio/images/bikewatching.svg",
+    "url": "https://dklopstein.github.io/bikewatching/",
+    "description": "A visual tool to see BlueBike station trends in Boston and Cambridge."
   },
   {
     "title": "Totam eum aperiam vero.",

@@ -383,3 +383,8 @@ circle:hover {
 circle.selected {
   fill: #ff6b6b;
 }
+
+article a {
+  color: inherit;
+  text-decoration: inherit;
+}
